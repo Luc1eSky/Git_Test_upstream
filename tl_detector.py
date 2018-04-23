@@ -6,6 +6,6 @@ def traffic():
 	base_waypoints = waypoint_loader.loader()
 
 	# modify waypoints (change to mean) --> use np.array(base_waypoints).mean()
-	multiplier = 5
+	multiplier = np.array(base_waypoints).mean()
 
 	return multiplier
